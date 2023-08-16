@@ -1,0 +1,120 @@
+:root {
+  --calcPersentage: 50%;
+}
+
+.todo-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.todo-input {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  border: 2px solid gold;
+  border-radius: 5px;
+  color: rgba(0, 0, 255, 0.589);
+  font-style: italic;
+  outline: none;
+}
+.todo-btn {
+  background-color: rgba(0, 0, 255, 0.589);
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+}
+.message {
+  color: gray;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.todo-list {
+  list-style-type: none;
+  border-top: 1px solid #ccc9c9;
+  margin-top: 20px;
+  padding: 0;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.todo-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc9c9;
+  transition: 0.3s ease;
+}
+.todo-item:hover {
+  background-color: rgba(127, 255, 212, 0.199);
+}
+
+.todo-content {
+  margin-left: 8px;
+  color: rgba(0, 0, 255, 0.589);
+  font-size: 18px;
+  font-style: italic;
+  transition: 0.3s ease;
+  font-weight: 700;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.edContent {
+  text-decoration: line-through;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+.todos-bottom-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.indicator {
+  border: 1px solid gray;
+  width: 270px;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(
+    to right,
+    yellow 0%,
+    yellow var(--calcPersentage),
+    white var(--calcPersentage)
+  );
+}
+
+.delete-completed-btn {
+  padding: 13px 13px 13px 18px;
+  background-color: rgba(0, 0, 255, 0.589);
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-style: italic;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.delete-completed-btn:hover {
+  background-color: rgba(78, 78, 223, 0.589);
+}
